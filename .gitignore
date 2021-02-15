@@ -32,6 +32,8 @@
 /build/
 .firebaserc
 firebase.json
+.firebase
+.vscode
 # Web related
 lib/generated_plugin_registrant.dart
 
