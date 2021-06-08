@@ -18,10 +18,20 @@ class Footer extends StatelessWidget {
           child: SelectableText.rich(
             TextSpan(children: [
               TextSpan(
-                  text: "©️ 2021 Shreeman Arjun", style: GoogleFonts.sofia()),
+                text: "©️ 2021 Shreeman Arjun",
+                style: GoogleFonts.sofia(
+                    color: themeController.darkmode.value
+                        ? Colors.white
+                        : Colors.black),
+              ),
               TextSpan(
                   text: " \n  Built with 💘 Flutter",
-                  style: GoogleFonts.pacifico(letterSpacing: 2))
+                  style: GoogleFonts.pacifico(
+                    color: themeController.darkmode.value
+                        ? Colors.white
+                        : Colors.black,
+                    letterSpacing: 2,
+                  ))
             ]),
             enableInteractiveSelection: false,
             dragStartBehavior: DragStartBehavior.start,

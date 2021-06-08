@@ -36,7 +36,6 @@ class Introduction extends StatelessWidget {
           textAlign: TextAlign.center,
           cursorColor: Colors.red,
           enableInteractiveSelection: true,
-          
           showCursor: true,
           toolbarOptions: ToolbarOptions(copy: true, selectAll: true),
         ),
